@@ -1,0 +1,10 @@
+name: time-lapse-inversion
+channels:
+    - conda-forge
+    - defaults
+    - gimli
+dependencies:
+
+    - pygimli>=1.5.0
+    - pandas
+
