@@ -1,0 +1,14 @@
+ TYPE=5
+ ST=2
+ STM=2
+ higv=  0.100000001    
+ lowv=   9.99999996E-13
+set title "synth   \n{/Symbol c} =   0.000, CF = 1.000"
+ set ylabel "induced voltage / V/m^2"
+ rhomin=  0.699999988    
+ rhomax=   1100.00024    
+ animin=   0.00000000    
+ animax=   2.00000000    
+ depthmin=   5.00000000    
+ depthmax=   80.0000000    
+ set out "GNUPLOTEMU-DATEN.ps"

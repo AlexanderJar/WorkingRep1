@@ -1,0 +1,69 @@
+!rm -r tem_occ_r2.epl
+
+
+getm
+m0_occam
+
+load
+TLHZ
+NO  
+NO  
+NO  
+YES 
+pingo--1-4A-1_txt.inv
+edit
+\ 2
+/ 0
+> 1234
+20
+^ 1234
+4e-7
+e
+
+setu
+invm
+2   
+invp
+1.0 
+5.0000  
+15
+2   
+2   
+0.1 
+NO  
+1
+erro
+YES 
+NO  
+2.0 
+2.0 
+YES 
+NO  
+exit
+
+fix
+c   
+e  
+
+auto
+savd
+nt_lghg_zt_occ_r2.dat
+xypl
+NO 
+tem_occ_r2
+tem_occ_r2
+
+!cp m0_occam.mod tem_occ_r2.epl
+!mv *olo tem_occ_r2.epl
+exit
+
+
+# modl  
+# 30   
+# YES  
+# 1    
+# 300 
+# YES  
+# 10   
+# YES  
+# m0_occam 

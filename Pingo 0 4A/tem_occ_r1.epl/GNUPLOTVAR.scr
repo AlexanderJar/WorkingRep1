@@ -1,0 +1,14 @@
+ TYPE=5
+ ST=2
+ STM=2
+ higv=   1.00000005E-03
+ lowv=   1.00000001E-07
+set title "pingo--1\n{/Symbol c} =   0.791, CF = 1.000"
+ set ylabel "induced voltage / V/m^2"
+ rhomin=  0.188543782    
+ rhomax=   328.971313    
+ animin=   0.00000000    
+ animax=   2.00000000    
+ depthmin=  0.500000000    
+ depthmax=   2000.00000    
+ set out "GNUPLOTEMU-DATEN.ps"

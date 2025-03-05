@@ -1,0 +1,44 @@
+ F   = Invert Tx-Distortion:                                       
+   1.00000000       = Starting value for main transmitter (Txx):                  
+   0.00000000       = Starting value for perpendicular transmitter (Txy);         
+           0   = Enter transformation type(0=lin, 1=log, 2=asinh):           
+           2   = Scale-factor-type (0=fixed, 1=min, 2=max/10n):              
+.10000E-04  = Enter transform-scaling-factor:                             
+ T   = Should CHI be used (RMS otherwise):                         
+ F   = Take number of free parameter into account ?                
+ T   = Calculate Error relative to each individual date point:     
+           1   = Relative to which data point:                               
+ F   = Normalize weights ?                                         
+   2.00000000       = Enter error-estimate in %:                                  
+   2.00000000       = Lowest accepted error in % (0 to switch off):               
+   1.00000000       = Assume which error in % (for weighting only):               
+          30   = Enter maximum number of iterations:                         
+   9.99999978E-03   = Enter minimum for relative singular value threshold:        
+ T   = Do you want damped error bounds ?                           
+ T   = Do you want 68 % confidence interval ? (else 95 %)          
+ F   = Do you want the optimized Marquardt factor ?                
+ F   = Propagate the model along the profile ?                     
+ F   = Individual back-up model for each station ?                 
+ F   = Individual apriori information for each station ?           
+ F   = Apply parameter weights (soft bounds) ?                     
+ F   = Apply parameter weights (soft bounds) ?                     
+ F   = Apply parameter limits (hard bounds) ?                      
+           2   = Enter output options for inversion statistics:              
+           2   = Enter IOUTZ:                                                
+   1.00000000       = Enter preset for calibration factor (actual data set):      
+ F   = Use normalized source moment ?                              
+ T   = Use extended bipole ?                                       
+ F   = More Iterations for smoothing the model ?                   
+   50.0000000       = Enter source length (m) or source area (m*m):               
+   1.00000000       = Enter source current (A):                                   
+ F   = Occam Inv. ?
+          15 	= Enter maximum number of iterations:                         
+   1.00000000     	= Enter required tolerance for fit:                           
+   5.00000000      = Enter minimum relative misfit decrease in % (0=DISABLE)     
+           2  = Roughness 1,2 (1st,2nd deriv.):                             
+           2  =        (0=lowest chi, 1=L-Curve, 2=Quasi-L-Curve)           
+ F  = Occam Inv. with anisotropy ?
+ F  = Smoothing the CF:                                           
+           0  =   Free CF-fixes in iteration (0=never,-1=if conv.):         
+          60  =   Never free CF-fixes in storages over:                     
+  0.100000001      =        minimal multiplier(n) times                          

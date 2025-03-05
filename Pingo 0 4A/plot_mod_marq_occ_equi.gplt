@@ -1,0 +1,24 @@
+#!/bin/bash for gnuplot highlight
+set term postscript portrait color enhanced blacktext font 'Times-New-Roman,40,normal'
+set size 0.5,0.65
+set output 'TEM_Harz2-50m.eps'
+set title 'TEM ' offset 0, 0.7
+set xrange [ 1 : 10000.0]
+set yrange [250.0 : -55]
+set logscale x
+# set logscale y
+set term post solid
+set pointsize 1.3
+set xlabel '{/Symbol r} / {/Symbol W}m' offset 0,0.5
+set ylabel 'z / m' offset 0
+#set ytics 50
+#set mytics 1
+set grid xtics ytics mytics #mytics
+set style line 1 lt 1 lw 3
+set style line 2 lt 6 lw 3
+set key inside right top
+plot 'tem_equi.epl/EQ_MODELS.DAT' u (abs($2)):1 title 'EQUI' w l lw 5 lt 5 linecolor rgb "#bebebe", \
+ 'tem_occ_r1.epl/MODEL.gnu' u 1:(abs($2)) title 'R1: {/Symbol c}=0.99' w l lw 4 lt 2, \
+ 'tem_occ_r2.epl/MODEL.gnu' u 1:(abs($2)) title 'R2: {/Symbol c}=1.46' w l lw 4 lt 6, \
+ 'tem_marq.epl/MODEL.gnu' u 1:(abs($2)) title 'MQ: {/Symbol c}=1.02' w l lw 4 lt 7
+exit

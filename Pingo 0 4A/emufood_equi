@@ -1,0 +1,59 @@
+!rm -r tem_equi.epl
+
+
+getm     
+nt_lghg_zt_marq.mod
+ 
+load     
+TLHZ     
+NO       
+NO       
+NO       
+YES      
+pingo--1-4A-1_txt.inv
+edit
+\ 2
+/ 0
+> 1234
+20
+^ 1234
+4e-7
+e
+
+setu     
+invm     
+1        
+invp 
+1.0      
+5.0000      
+30       
+0.01      
+0
+erro     
+YES      
+NO       
+2.0      
+2.0      
+YES      
+NO       
+exit     
+
+fix 
+c        
+e  
+
+equi   
+yes       
+10.0      
+NO 
+5.0   
+236    
+savd     
+nt_lghg_zt_equi 
+xypl 
+no 
+tem_equi 
+
+!cp EQ_MODELS.DAT tem_equi.epl 
+!cp m0_marq.mod tem_equi.epl 
+exit 

@@ -1,0 +1,60 @@
+!rm -r tem_marq.epl
+
+getm 
+m0_marq.mod
+
+
+load
+TLHZ
+NO  
+NO  
+NO  
+YES 
+pingo--1-4A-1_txt.inv
+edit
+\ 2
+/ 0
+> 1234
+20
+^ 1234
+4e-7
+e
+
+setu 
+invm 
+1 
+invp 
+1.0
+5.010000 
+50
+0.01 
+0
+erro
+YES
+NO
+2.0
+2.0
+YES
+NO
+exit
+ 
+fix 
+c
+e 
+auto 
+
+savd 
+nt_lghg_zt_marq
+xypl 
+NO
+tem_marq 
+marq
+
+!mv synth* tem_marq.epl 
+!cp m0_marq.mod tem_marq.epl 
+!mv *.log tem_marq.epl
+!mv *.sta tem_marq.epl
+
+!get_imps.sh
+
+exit 
